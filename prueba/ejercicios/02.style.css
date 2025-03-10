@@ -1,0 +1,121 @@
+/* Ejercicio completo de HTML y CSS
+
+(Ok)1. Crear un documento html y vinculalo con css. 
+(Ok)2. Crear una estructura html que cuente con un CONTENEDOR GENERAL, CABECERA, MENU, BARRA LATERAL, SECCION DE CONTENIDO PRINCIPAL; ELEMENTOS DENTRO DEL CONTENIDO PRINCIPAL Y FOOTER.
+(Ok)3. Todo el contenido debe estar dentro del contenedor general y su ancho sera de 1200px y estar centrado.
+(Ok)4. Header debe ocupar el 100% del ancho y tener un texto grande centrado .
+(Ok)5. El menú debe tener los elementos uno al lado del otro.
+(Ok)6. El contenido principal debe tener un ancho del 70%.
+(Ok)7. El contenido dentro del conternedor principal debe ser una cuadricula de 4 lineas y 2 cajas. 
+(Ok)8. La barra lateral debe tener un ancho de 30%.
+(Ok)9. El footer debe tener un ancho del 100% del div que la contiene y estar abajo del todo.
+
+*/
+
+/* Estilo global (todo) */
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+}
+
+/* Estilos a contenedor general */
+#general{
+    width: 1200px;
+    border: 1px solid gray ;
+    margin: 0% auto;
+    margin-top: 30px;
+}
+
+/* Estilo de la cabecera */
+#header{
+    width: 100%;
+    height: 100px;
+    background: blue;
+    color: white; /* Etiqueta para dar color a la letra */
+    text-align: center;
+    line-height: 80px;
+}
+
+/* Quitar flotador */
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+/* Estilos menu */
+#menu{
+    background: aliceblue;
+}
+#menu ul li{
+    display: block;
+    float: left;
+    border-right: 1px solid maroon;
+}
+
+#menu ul li a{
+    display: block;
+    padding: 15px;
+    color: gray;
+}
+
+#menu ul li:hover{ /* hover sirve para que cuando selecciones algo con el maus se haga la configuracion dicha */
+    background: blue;
+}
+
+#menu ul li a:hover{
+    color: white;
+}
+
+/* Estilo contenido principal */
+#contenido{
+    width: 69.33%; /* ancho en la pantanlla */
+    border: 2px solid mediumslateblue;
+    float: left;
+    /*box-sizing: border-box; ( sirve para que aproxima exactamente los porcentajes en la pantalla )*/
+}
+
+/* Estilo barra lateral */
+#lateral{
+    
+    float: right;
+    width: 30%;
+    border: 2px solid mediumpurple;
+    min-height: 508px;
+    text-align: center;
+    line-height: 505px;
+}
+
+/* Estilo contenido principal */
+#contenido .caja{
+    width: 40%;
+    height: 50px;
+    background-color: antiquewhite;
+    border: 2px solid black;
+    color: black;
+    float:left;
+    margin: 30px;
+    margin-left: 40px;
+    text-align: center;
+    line-height: 45px; /* sirve para centrar exactamente */
+}
+
+.res{
+    color: brown;
+}
+
+#contenido h1{
+    text-align: center;
+    border-bottom: 2px solid blueviolet;
+    padding: 10px;
+}
+
+/* Estilo pie de página*/
+#footer{
+    width: 100%;
+    height: 35px; /* Altura*/
+    background-color: maroon;
+    color: white;
+    text-align: center;
+}

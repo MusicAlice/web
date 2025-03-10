@@ -1,0 +1,89 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+#contenedor{
+    width: 1200px;
+    height: 1000px;
+    background: gainsboro;
+    margin: 0.5em auto;
+    padding: 0.5em;
+}
+
+/* tambien puedo poner o colocar propiamente al selector de etiqueta */
+header{
+    height: 10%;
+    background: tan;
+    border-radius: 1em;
+    margin: 1em;
+    text-align: center;
+    line-height: 100px;
+}
+
+#nav{
+    height: 10%;
+    background: rosybrown;
+    border-radius: 1em;
+    margin: 1em;
+    margin-top: -10px;
+    text-align: center;
+    line-height: 100px;
+}
+
+#contenido{
+    height: 40%;
+    background: white;
+    border-radius: 1em;
+    margin: 1em;
+    margin-top: -10px;
+    
+}
+
+#section{
+    height: 96.5%;
+    width: 75%;
+    background: darkgray;
+    border-radius: 1em;
+    margin-top: 2px;
+    margin-left: 1em;
+    padding-top: 10px;
+    text-align: left;
+    line-height: 30px;
+    float: left;
+}
+
+#aside{
+    height: 99%;
+    width: 20%;
+    float: right;
+    background: darkgray;
+    border-radius: 1em;
+    margin-top: 2px;
+    text-align: center;
+    line-height: 50px;
+    margin-right: 1em;
+    
+}
+
+.articulo{
+   text-align: center;
+   line-height: 70px; 
+   background: burlywood;
+   border-radius: 4em;
+   margin-top: 8px;
+   margin-left: 4em;
+   margin-right: 4em;
+}
+
+#footer{
+    height: 50px;
+    line-height: 40px;
+    text-align: center;
+    background: brown;
+    border-radius: 1em;
+    margin: 1em;
+    
+    
+}
